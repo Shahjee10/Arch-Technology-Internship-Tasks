@@ -1,64 +1,123 @@
-# Internship Task 1 – Stock Price Prediction with LSTM
+# Internship Tasks – ARCH Technologies
 
-## Overview
+This repository contains my internship tasks completed at **ARCH Technologies**.  
+Each task helped me explore practical Data Science and Machine Learning concepts through hands-on implementation.
 
+---
+
+# 📌 Internship Task 1 – Stock Price Prediction with LSTM
+
+## 📝 Overview
 This project was completed as **Internship Task 1** during my internship at **ARCH Technologies**.  
 It is a **guided project** where I explored **stock price prediction** using **LSTM (Long Short-Term Memory)** networks in Python.  
 The goal of the project was to understand **time series forecasting**, data preparation, model building, and making future predictions.
 
 ---
 
-## Tools & Libraries Used
-
+## 🛠 Tools & Libraries Used
 - **Python 3**
-- **Pandas** – for data handling
-- **NumPy** – for numerical operations
-- **Matplotlib** – for data visualization
-- **Scikit-learn** – for data scaling (`MinMaxScaler`)
-- **TensorFlow / Keras** – for building and training the LSTM model
-- **Sklearn.metrics** – for evaluating model performance (RMSE)
+- **Pandas** – data handling  
+- **NumPy** – numerical operations  
+- **Matplotlib** – data visualization  
+- **Scikit-learn** – scaling (`MinMaxScaler`)  
+- **TensorFlow / Keras** – LSTM model  
+- **sklearn.metrics** – RMSE evaluation  
 
 ---
 
-## Project Workflow
+## 🔄 Project Workflow
 
-1. **Data Loading & Exploration**  
-   - Loaded `AAPL.csv` into a pandas DataFrame.  
-   - Explored the dataset using `.head()` and `.tail()`.  
-   - Columns included: `Date`, `Open`, `High`, `Low`, `Close`, `Volume`, `Adjusted Close`.
+### 1️⃣ Data Loading & Exploration
+- Loaded `AAPL.csv`  
+- Explored data using `.head()` and `.info()`  
+- Main columns: `Date`, `Open`, `High`, `Low`, `Close`, `Volume`
 
-2. **Data Preprocessing**  
-   - Extracted closing prices.  
-   - Visualized closing price trends.  
-   - Applied **MinMaxScaler** to normalize data to [0,1] for LSTM.  
+### 2️⃣ Data Preprocessing
+- Selected closing prices  
+- Visualized trends  
+- Applied **MinMaxScaler** to normalize values  
 
-3. **Time Series Preparation**  
-   - Created a time series dataset using a sliding window approach (`time_step=100`).  
-   - Split data into **training (65%)** and **testing sets (35%)**.  
-   - Reshaped data for LSTM input.
+### 3️⃣ Time Series Preparation
+- Created sliding window sequences (`time_step = 100`)  
+- Split into **65% training** and **35% testing**  
+- Reshaped data for LSTM input  
 
-4. **Model Building & Training**  
-   - Built a **stacked LSTM** model with three LSTM layers and a Dense output layer.  
-   - Compiled the model using `adam` optimizer and `mean_squared_error` loss.  
-   - Trained the model on training data with validation on test data (100 epochs, batch size 64).  
+### 4️⃣ Model Building & Training
+- Built a **stacked LSTM model**  
+- Optimizer: `adam`, Loss: `mse`  
+- Trained for **100 epochs**, batch size **64**
 
-5. **Prediction & Evaluation**  
-   - Generated predictions for training and testing data.  
-   - Inverse-transformed predictions to original scale.  
-   - Evaluated using **RMSE**.  
-   - Plotted **actual vs predicted prices**.
+### 5️⃣ Prediction & Evaluation
+- Generated predictions for train & test sets  
+- Inverse transformed values  
+- Evaluated using **RMSE**  
+- Plotted **Actual vs Predicted** graphs  
 
-6. **Future Forecasting**  
-   - Predicted stock prices for the **next 30 days**.  
-   - Visualized future predictions alongside recent trends.  
-
----
-
-## Results
-
-- Successfully predicted stock prices for the next 30 days.  
-- Visualized training, testing, and future predictions.  
-- Gained practical understanding of **LSTM networks for time series forecasting**.  
+### 6️⃣ Future Forecasting
+- Predicted **next 30 days**  
+- Visualized forecasted trend  
 
 ---
 
+## ✅ Results
+- Successfully predicted the next 30 days of stock prices  
+- Built and trained a complete LSTM time-series model  
+- Improved understanding of **deep learning for forecasting**
+
+---
+
+# 📌 Internship Task 2 – Titanic Survival Prediction (ML Classification)
+
+## 📝 Overview
+This task focuses on the **Titanic Survival Prediction** problem, a classic **binary classification** dataset.  
+The objective was to clean the dataset, encode categorical columns, visualize relationships, and train ML models to predict survival.
+
+---
+
+## 🛠 Tools & Libraries Used
+- **Python 3**
+- **Pandas** – data cleaning  
+- **NumPy** – numerical operations  
+- **Matplotlib / Seaborn** – visualizations  
+- **Scikit-learn** – ML models & preprocessing  
+
+---
+
+## 🔄 Project Workflow
+
+### 1️⃣ Data Cleaning
+- Removed duplicate rows  
+- Filled missing values (`Age`, `Embarked`)  
+- Dropped unnecessary columns  
+- Avoided chained assignment warnings by safe DataFrame updating  
+
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Count plots for `Survived`, `Sex`, `Pclass`  
+- Heatmap for correlations  
+- Distribution plots for Age & Fare  
+- Insights: Women & children had higher survival rate
+
+### 3️⃣ Feature Engineering
+- Converted categorical columns using:
+  ```python
+  df.replace({'Sex': {'male': 0, 'female': 1},
+              'Embarked': {'S': 0, 'C': 1, 'Q': 2}})
+### 3️⃣ Feature Selection & Scaling
+- Selected relevant features for training  
+- Scaled numerical columns  
+
+### 4️⃣ Model Building
+Trained multiple ML models:
+- **Logistic Regression**  
+- **Random Forest Classifier**  
+- **Decision Tree Classifier**  
+
+Evaluated using:
+- **Accuracy Score**  
+- **Classification Report**  
+- **Confusion Matrix**  
+
+### 5️⃣ Results
+- Achieved strong accuracy on the Titanic dataset  
+- Classification report provided **precision, recall, F1-score**  
+- Visualization of model predictions & survival patterns  
