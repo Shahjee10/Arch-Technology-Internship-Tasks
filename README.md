@@ -120,4 +120,66 @@ Evaluated using:
 ### 5️⃣ Results
 - Achieved strong accuracy on the Titanic dataset  
 - Classification report provided **precision, recall, F1-score**  
-- Visualization of model predictions & survival patterns  
+- Visualization of model predictions & survival patterns
+
+---
+
+# 📌 Internship Task 3 – Customer Segmentation using K-Means Clustering
+
+## 📝 Overview
+This project was completed as **Internship Task 3 (Month 2)** during my internship at **ARCH Technologies**.  
+The objective of this task was to perform **Customer Segmentation** using **Unsupervised Machine Learning** techniques to identify meaningful customer groups based on purchasing behavior.
+
+Using a mall customer dataset, I applied the **K-Means clustering algorithm** to segment customers based on their **Annual Income** and **Spending Score**, helping businesses better understand customer patterns and improve targeted marketing strategies.
+
+---
+
+## 🛠 Tools & Libraries Used
+- **Python 3**
+- **Pandas** – data handling & preprocessing  
+- **NumPy** – numerical operations  
+- **Matplotlib / Seaborn** – data visualization  
+- **Scikit-learn** – K-Means clustering & preprocessing  
+
+---
+
+## 🔄 Project Workflow
+
+### 1️⃣ Data Loading & Exploration
+- Loaded the mall customer dataset  
+- Explored dataset structure using `.head()` and `.info()`  
+- Key features used: `Annual Income`, `Spending Score`
+
+### 2️⃣ Data Preprocessing
+- Selected relevant numerical features  
+- Checked for missing values  
+- Prepared data for clustering  
+
+### 3️⃣ Optimal Cluster Selection
+- Used the **Elbow Method**  
+- Identified **5 optimal clusters** for segmentation  
+
+### 4️⃣ Model Building
+- Applied **K-Means clustering** with `k = 5`  
+- Assigned cluster labels to each customer  
+
+### 5️⃣ Visualization & Interpretation
+- Visualized clusters using scatter plots  
+- Analyzed customer behavior patterns within each cluster  
+
+---
+
+## ✅ Results & Insights
+The model successfully identified **5 distinct customer segments**:
+
+- **High income + high spending** – ideal customers for premium offers  
+- **High income + low spending** – strong potential for targeted campaigns  
+- **Low income + high spending** – loyal value-seeking customers  
+- **Low income + low spending** – budget-conscious customers  
+- **Medium income + balanced spending** – stable and consistent group  
+
+This analysis demonstrates how **Unsupervised Learning** can uncover hidden patterns in customer data and support **data-driven business decisions**.
+
+---
+
+  
