@@ -182,4 +182,57 @@ This analysis demonstrates how **Unsupervised Learning** can uncover hidden patt
 
 ---
 
+# 📌 Internship Task 4 – Movies Rating Prediction (Exploratory Data Analysis)
+
+## 📝 Overview
+This project was completed as the **final internship task of Month 2** during my internship at **ARCH Technologies**.  
+The objective of this task was to perform **Exploratory Data Analysis (EDA)** on a movie dataset to understand patterns in movie attributes and prepare the data for **future rating prediction models**.
+
+This task focused on converting **raw movie data into meaningful insights** through data cleaning, analysis, and visualization.
+
+---
+
+## 🛠 Tools & Libraries Used
+- **Python 3**
+- **Pandas** – data loading & preprocessing  
+- **NumPy** – numerical operations  
+- **Matplotlib** – basic visualizations  
+- **Seaborn** – advanced data visualization  
+
+---
+
+## 🔄 Project Workflow
+
+### 1️⃣ Data Loading & Exploration
+- Loaded the movie dataset  
+- Explored dataset structure using `.head()`, `.tail()`, `.shape()`, and `.info()`  
+- Identified key features such as movie runtime and ratings  
+
+### 2️⃣ Data Cleaning & Preparation
+- Checked for missing and null values  
+- Removed incomplete records to improve data quality  
+- Prepared a clean dataset for analysis  
+
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Analyzed movie attributes such as **runtime**  
+- Identified **top lengthy movies**  
+- Explored trends and patterns within the dataset  
+
+### 4️⃣ Data Visualization
+- Created informative visualizations using **Seaborn and Matplotlib**  
+- Used bar plots to highlight key insights from the data  
+
+---
+
+## ✅ Results & Outcomes
+- Successfully cleaned and analyzed a real-world movie dataset  
+- Extracted actionable insights using **EDA techniques**  
+- Built a strong foundation for **movie rating prediction models**  
+- Improved skills in **data analysis, visualization, and data storytelling**
+
+---
+
+This task completed the **Month 2 internship objectives** at **ARCH Technologies** and reinforced the importance of **EDA before applying machine learning models**.
+
+
   
